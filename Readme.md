@@ -1,4 +1,4 @@
-# Finite-horizon Continous LQR #
+# Finite-horizon Continuous LQR #
 
 Simple example of the solution to the following problem:
 
