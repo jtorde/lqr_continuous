@@ -1,6 +1,6 @@
 # Finite-horizon Continous LQR #
 
-Simple example of the solution of the following problem:
+Simple example of the solution to the following problem:
 
 ![](./equations.svg) 
 
