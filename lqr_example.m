@@ -1,17 +1,12 @@
-%For numerical backwards integration, see https://groups.google.com/g/comp.soft-sys.matlab/c/17Q5OpbueDQ/m/sV27KeBeqQgJ
 clear; clc; close all;
 set(0,'DefaultFigureWindowStyle','normal') %'normal' 'docked'
 set(0,'defaulttextInterpreter','latex');
 set(groot, 'defaultAxesTickLabelInterpreter','latex'); set(groot, 'defaultLegendInterpreter','latex');
 set(0,'defaultfigurecolor',[1 1 1])
 
-
-
 [A, B, Rxx, Ruu, Pf, tf]=getParams([]);
 
-interval=tf:-0.01:0.0; %Note that we need to integrate backwards
-
-
+interval=tf:-0.01:0.0; %Note that we need to integrate backwards. See also https://groups.google.com/g/comp.soft-sys.matlab/c/17Q5OpbueDQ/m/sV27KeBeqQgJ
 
 %%%%%%%%%%%%%%%%%%%% SOLVE THE DIFFERENTIAL RICATTI EQUATION
 Pf_flattened=[Pf(1,1) ; Pf(1,2) ; Pf(2,2)];
